@@ -63,7 +63,7 @@ workspace/
 ### 1. Cloning repo
 ```bash
 cd /workspace
-git clone https://github.com/yourusername/gensyn-node-watchdog
+git clone https://github.com/ashishki/gensyn-node-watchdog
 cd gensyn-node-watchdog
 ```
 
