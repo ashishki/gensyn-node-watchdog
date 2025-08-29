@@ -12,8 +12,8 @@
 # - Graceful handling of manual stops (Ctrl+C)
 # - Multi-node support with unique ports
 #
-# Author: Your GitHub Username
-# License: MIT
+# Author: ashishki
+# 
 # ===================================================================
 
 # === CONFIGURATION ===
