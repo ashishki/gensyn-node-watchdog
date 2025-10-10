@@ -27,7 +27,7 @@ BETTING_LOG="$NODE_DIR/logs/prg_record.txt"
 LAUNCH_CMD="bash ./run_rl_swarm.sh"                   # For additional nodes use: "PORT=3001(2,3,4...) bash ./run_rl_swarm.sh"
 
 # System Configuration
-CHECK_INTERVAL=500                                     # 5 min between health checks
+CHECK_INTERVAL=1500                                     # 5 min between health checks
 BETTING_CHECK_INTERVAL=3600                           # 1 hour between betting status checks
 GAME_CHANGE_CHECK_INTERVAL=3600                      # 1 hour between game/round change checks
 MIN_VRAM_MB=1000                                      # Minimum GPU memory usage to consider node alive
