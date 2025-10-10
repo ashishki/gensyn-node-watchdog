@@ -19,18 +19,18 @@
 # === CONFIGURATION ===
 # Customize these variables for each node:
 
-NODE_NAME="gensyn1"                                    # Unique node identifier
-NODE_DIR="/workspace/rl-swarm1"                       # Path to node directory  
-LOG_FILE="/workspace/gensyn_auto_restart_${NODE_NAME}.log"
+NODE_NAME="gensyn"                                    # Unique node identifier
+NODE_DIR="/root/rl-swarm"                       # Path to node directory  
+LOG_FILE="/root/gensyn_auto_restart_${NODE_NAME}.log"
 RUNTIME_LOG="$NODE_DIR/node_runtime.log"
 BETTING_LOG="$NODE_DIR/logs/prg_record.txt"
 LAUNCH_CMD="bash ./run_rl_swarm.sh"                   # For additional nodes use: "PORT=3001(2,3,4...) bash ./run_rl_swarm.sh"
 
 # System Configuration
-CHECK_INTERVAL=300                                     # 5 min between health checks
+CHECK_INTERVAL=500                                     # 5 min between health checks
 BETTING_CHECK_INTERVAL=3600                           # 1 hour between betting status checks
 GAME_CHANGE_CHECK_INTERVAL=3600                      # 1 hour between game/round change checks
-MIN_VRAM_MB=2000                                      # Minimum GPU memory usage to consider node alive
+MIN_VRAM_MB=1000                                      # Minimum GPU memory usage to consider node alive
 SWARM_CMD="python -m rgym_exp.runner.swarm_launcher --config-path $NODE_DIR/rgym_exp/config --config-name rg-swarm.yaml"
 MODEL_NAME="Gensyn/Qwen2.5-0.5B-Instruct"
 GRACE_PERIOD=60                                       # Seconds to wait after restart before next health check
