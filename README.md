@@ -1,5 +1,14 @@
 # RL-Swarm Launcher
 
+> [!IMPORTANT]
+> This repository is retained as a historical, read-only snapshot and is no
+> longer maintained. Its useful restart/logging boundary was rewritten with
+> deterministic smoke coverage and exact provenance in
+> [`gensyn-docker-multi`](https://github.com/ashishki/gensyn-docker-multi/blob/dabd4bf95ddead02844dd7b67bfec6cbe38b599f/docs/MIGRATED_OPERATIONS_NOTES.md).
+> The commands below may not match current RL-Swarm behavior; use current
+> upstream documentation before operating a node. No uptime, production, GPU,
+> or current-network compatibility is claimed.
+
 Automated launching and monitoring of RL-Swarm nodes with GPU-first support.
 
 ## Features
